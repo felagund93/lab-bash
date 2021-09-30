@@ -1,0 +1,290 @@
+Last login: Thu Sep 30 09:57:42 on console
+(base) albertgh@Alberts-Air ~ % PS1="$"
+$pwd
+/Users/albertgh
+$cd /Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week\ 1/Unit\ 1 
+$ls
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1
+$git clone https://github.com/felagund93/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Total 40 (delta 0), reused 0 (delta 0), pack-reused 40
+Receiving objects: 100% (40/40), 10.91 KiB | 698.00 KiB/s, done.
+Resolving deltas: 100% (14/14), done.
+$pwwd
+zsh: command not found: pwwd
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1
+$ls 
+lab-bash
+$cd lab-bash 
+$ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+$echo "Hello World"
+Hello World
+$ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+$mkdir new_dir
+$ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+$rmdir new_dir 
+$ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+$ls lorem
+at.txt		at.txte		lorem.txt	sed.txt
+$cp lorem/sed.txt lorem-copy/sed.txt
+$ls lorem-copy 
+dummy_file.txt	sed.txt
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash
+$ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+$cd lorem
+$ls
+at.txt		at.txte		lorem.txt	sed.txt
+$cp at.txt ../lorem-copy/at.txt; cp at.txte ../lorem-copy/at.txte; cp lro
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+$
+$ls                                                                      
+at.txt		at.txte		lorem.txt	sed.txt
+$cd ../lorem-copy 
+$ls
+at.txt		at.txte		dummy_file.txt	sed.txt
+$cd ../lorem     
+$ls
+at.txt		at.txte		lorem.txt	sed.txt
+$cp at.txt ../lorem-copy/at.txt; cp at.txte ../lorem-copy/at.txte; cp lorem.txt ../lorem-copy/lorem.txt
+$cd ../lorem-copy 
+$ls
+at.txt		at.txte		dummy_file.txt	lorem.txt	sed.txt
+$ls sed.txt 
+sed.txt
+$pwd         
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash/lorem-copy
+$cd ../
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash
+$ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+$cd lorem
+$ls
+at.txt		at.txte		lorem.txt	sed.txt
+$cat lorem.txt 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.%                                                         $cat at.txt; cat lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.%                                                         $pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash/lorem
+$cd ../lorem-copy 
+$head sed.txt 
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+$head -n 3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+$tail -n 3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+$echo 'Homo homini lupus.' >> sed.txt 
+$tail -n 3 sed.txt 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash/lorem-copy
+$tail -n 3 ../lorem/sed.txt 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash/lorem-copy
+$cd ../lorem
+$ls
+at.txt		at.txte		lorem.txt	sed.txt
+$sed -i -r 's/et/ET/g' at.txt
+$cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+$cat sed.txt 
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+$whoami     
+albertgh
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash/lorem
+$ls -help
+total 40
+-rwxr-xr-x  1 albertgh  staff   853B Sep 30 20:46 at.txt
+-rwxr-xr-x  1 albertgh  staff   853B Sep 30 18:25 at.txt-r
+-rwxr-xr-x  1 albertgh  staff   852B Sep 30 18:25 at.txte
+-rwxr-xr-x  1 albertgh  staff   448B Sep 30 18:25 lorem.txt
+-rwxr-xr-x  1 albertgh  staff   891B Sep 30 18:25 sed.txt
+$ls --help
+ls: illegal option -- -
+usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
+$ls *.txt
+at.txt		lorem.txt	sed.txt
+$pwd  
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash/lorem
+$cat sed.txt | wc sed.txt 
+       9     131     891 sed.txt
+$cat sed.txt | wc -l sed.txt
+       9 sed.txt
+$ls ~ | wc -l lorem*
+       3 lorem.txt
+$ls -1q lorem* | wc -l
+       1
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash/lorem
+$ls
+at.txt		at.txt-r	at.txte		lorem.txt	sed.txt
+$wc lorem*
+       3      69     448 lorem.txt
+$ls lorem*
+lorem.txt
+$ls ~ lorem*
+lorem.txt
+
+/Users/albertgh:
+ALTER		Desktop		Dropbox		Music		exit
+Applications	Documents	Library		Pictures
+BattleScribe	Downloads	Movies		Public
+$find ~ -name 'lorem*' | wc -l
+find: /Users/albertgh/Library/Application Support/CallHistoryTransactions: Operation not permitted
+find: /Users/albertgh/Library/Application Support/CloudDocs/session/db: Operation not permitted
+find: /Users/albertgh/Library/Application Support/com.apple.sharedfilelist: Operation not permitted
+find: /Users/albertgh/Library/Application Support/Knowledge: Operation not permitted
+find: /Users/albertgh/Library/Application Support/com.apple.TCC: Operation not permitted
+find: /Users/albertgh/Library/Application Support/FileProvider: Operation not permitted
+find: /Users/albertgh/Library/Application Support/com.apple.avfoundation/Frecents: Operation not permitted
+find: /Users/albertgh/Library/Application Support/CallHistoryDB: Operation not permitted
+find: /Users/albertgh/Library/Assistant/SiriVocabulary: Operation not permitted
+find: /Users/albertgh/Library/Autosave Information: Operation not permitted
+find: /Users/albertgh/Library/IdentityServices: Operation not permitted
+find: /Users/albertgh/Library/Messages: Operation not permitted
+find: /Users/albertgh/Library/HomeKit: Operation not permitted
+find: /Users/albertgh/Library/Sharing: Operation not permitted
+find: /Users/albertgh/Library/Mail: Operation not permitted
+find: /Users/albertgh/Library/Accounts: Operation not permitted
+find: /Users/albertgh/Library/Safari: Operation not permitted
+find: /Users/albertgh/Library/Suggestions: Operation not permitted
+find: /Users/albertgh/Library/Containers/com.apple.Safari: Operation not permitted
+find: /Users/albertgh/Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider: Operation not permitted
+find: /Users/albertgh/Library/Containers/com.apple.mail: Operation not permitted
+find: /Users/albertgh/Library/Containers/com.apple.Notes: Operation not permitted
+find: /Users/albertgh/Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents: Operation not permitted
+find: /Users/albertgh/Library/PersonalizationPortrait: Operation not permitted
+find: /Users/albertgh/Library/Metadata/CoreSpotlight: Operation not permitted
+find: /Users/albertgh/Library/Metadata/com.apple.IntelligentSuggestions: Operation not permitted
+find: /Users/albertgh/Library/Cookies: Operation not permitted
+find: /Users/albertgh/Library/Caches/com.apple.HomeKit: Operation not permitted
+find: /Users/albertgh/Library/Caches/CloudKit: Operation not permitted
+find: /Users/albertgh/Library/Caches/com.apple.Safari: Operation not permitted
+find: /Users/albertgh/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+find: /Users/albertgh/.Trash: Operation not permitted
+       4
+$ls                              
+at.txt		at.txt-r	at.txte		lorem.txt	sed.txt
+$cd ..
+$ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+$ls lorem
+at.txt		at.txt-r	at.txte		lorem.txt	sed.txt
+$ls exercices
+$find .  -name 'lorem*' | wc -l
+       4
+$pdw
+zsh: command not found: pdw
+$pwd
+/Users/albertgh/Documents/Ironhack/Data_Analysis_Course/Week 1/Unit 1/lab-bash
+$find .  -name 'lorem*' | wc -l > number_lorem_files.txt
+$cat number_lorem_files.txt 
+       4
+$read
+name
+$name
+zsh: command not found: name
+$print name
+name
+$unset name
+$name
+zsh: command not found: name
+$print name
+name
+$read name=""
+ 
+zsh: not an identifier: name=
+$read
+name = ""
+$print name
+name
+$echo name
+name
+$unset name
+$echo name
+name
+$mkdir name
+$ls
+exercices		lorem-copy		outputs
+inputs			name			readme.md
+lorem			number_lorem_files.txt
+$rm name
+rm: name: is a directory
+$rmdir name 
+$ls
+exercices		lorem-copy		readme.md
+inputs			number_lorem_files.txt
+lorem			outputs
+$echo $name
+
+$echo name
+name
+$
+
